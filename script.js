@@ -12,9 +12,15 @@ fetch("quotes.json")
 
 
         document.getElementById("quote").textContent =
-            quote.quote;
+            quote.proverb;
+
+        document.getElementById("meaning").textContent =
+            quote.meaning;
 
         document.getElementById("author").textContent =
-            "— " + quote.author;
+            "— " + quote.origin;
 
+    })
+    .catch(error => {
+        console.error("Error loading quotes:", error);
     });
