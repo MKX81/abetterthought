@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(255,255,255,0.75),
+            rgba(240,245,240,0.85)
+        ),
+        url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #2c2c2c;
+}
+
+
+.container {
+    text-align: center;
+    padding: 30px;
+}
+
+
+.quote-card {
+    max-width: 750px;
+}
+
+
+.symbol {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 80px;
+    color: #777;
+    height: 60px;
+}
+
+
+blockquote {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 500;
+    line-height: 1.35;
+
+    margin: 30px 0;
+}
+
+
+#author {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+
+footer {
+    margin-top: 80px;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    color: #888;
+}
