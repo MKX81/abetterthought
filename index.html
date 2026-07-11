@@ -7,10 +7,17 @@
 
     <title>A Better Thought</title>
 
+    <meta name="description"
+        content="A daily proverb, a thoughtful explanation, and a quiet place to reflect.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
@@ -32,23 +39,28 @@
 
         </div>
 
+        <div class="scroll-indicator">
+            ↓
+        </div>
+
     </section>
 
 
     <section class="search-section">
 
-        <p>
-            A thought worth carrying today
+        <p class="search-heading">
+            Need to explore further?
         </p>
 
+        <form action="https://www.startpage.com/sp/search"
+              method="get"
+              target="_blank">
 
-        <form action="https://www.startpage.com/sp/search" method="get" target="_blank">
-
-            <input 
-                type="text" 
-                name="query" 
+            <input
+                type="text"
+                name="query"
                 placeholder="Search privately..."
-            >
+                autocomplete="off">
 
             <button type="submit">
                 Search
@@ -56,11 +68,9 @@
 
         </form>
 
-
     </section>
 
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
